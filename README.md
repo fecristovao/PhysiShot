@@ -26,21 +26,23 @@ começando a contar a partir da segunda semana do mês de março de 2021.
 
 **Semana Atividade**
 
-1ª Semana Criar um enredo e selecionar sprites
+- [x] Criar um enredo
 
-2ª Semana Início da criação das bibliotecas físicas do jogo
+- [ ] Selecionar sprites
 
-3ª Semana Mockup da animação
+- [x] Início da criação das bibliotecas físicas do jogo
 
-4ª Semana Entrega da primeira sprint
+- [ ] Mockup da animação
 
-5ª Semana Aprimoramento das bibliotecas físicas do jogo, inserção de elementos adicionais como vento
+- [ ] Entrega da primeira sprint
 
-6ª Semana Criação das animações finais com os sprites selecionados
+- [x] Aprimoramento das bibliotecas físicas do jogo, inserção de elementos adicionais como vento
 
-7ª Semana Ajustes finais
+- [ ] Criação das animações finais com os sprites selecionados
 
-8ª Semana Entrega versão final
+- [ ] Ajustes finais
+
+- [ ] Entrega versão final
 
 
 
