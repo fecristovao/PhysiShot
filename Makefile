@@ -34,10 +34,10 @@ BUILD_LINE = -W -std=c++11 -fpermissive
 
 
 physics.o: $(SOURCE_DIR)/physics.c
-	$(CC) $(BUILD_LINE) $(INCLUDE_DIR) -c $(SOURCE_DIR)physics.c -o $(OBJ_DIR)physics.o
+	$(CC) $(BUILD_LINE) $(INCLUDE_DIR) -c $(SOURCE_DIR)physics.c -o $(OBJ_DIR)physics.o $(OPTIONS_FLAGS)
 
 main.o: $(SOURCE_DIR)/main.c
-	$(CC) $(BUILD_LINE) $(INCLUDE_DIR) -c $(SOURCE_DIR)main.c -o $(OBJ_DIR)main.o
+	$(CC) $(BUILD_LINE) $(INCLUDE_DIR) -c $(SOURCE_DIR)main.c -o $(OBJ_DIR)main.o $(OPTIONS_FLAGS)
 
 all: physics.o main.o
-	$(CC) $(OBJ_DIR)main.o $(OBJ_DIR)physics.o -o $(OUTPUT_FILE) $(LIB_FLAGS)
+	$(CC) $(OBJ_DIR)main.o $(OBJ_DIR)physics.o -o $(OUTPUT_FILE) $(LIB_FLAGS) $(OPTIONS_FLAGS)
