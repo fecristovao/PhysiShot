@@ -1,5 +1,5 @@
 #Compilador
-CC = gcc
+CC = g++
 
 #Arquitetura
 OS_BITS = x64
@@ -14,7 +14,7 @@ OBJ_DIR = Obj/
 PIG = PigDev/
 
 #Pastas dos headers
-INCLUDE_DIR = -IIncludes/ -I$(PIG)/include -I$(PIG)/include/SDL -I$(PIG)/include/SDL_image -I$(PIG)/include/video
+INCLUDE_DIR = -I Includes/ -I $(PIG)/include -I $(PIG)/include/SDL -I $(PIG)/include/SDL_image -I $(PIG)/include/video
 
 #Pasta dos sources
 SOURCE_DIR = Src/
@@ -29,11 +29,15 @@ LIB_DEST_DIR = /usr/local/lib/
 #Saída do jogo principal
 OUTPUT_FILE = Physishot
 
-#Flags da warning
-WARNINGS = -Wall
+#Opções de Build
+BUILD_LINE = -W -std=c++11 -fpermissive
+
 
 physics.o: $(SOURCE_DIR)/physics.c
-	$(CC) $(WARNINGS) -c $(SOURCE_DIR)/physics.c $(OPTIONS_FLAGS) $(INCLUDE_DIR) -o $(OBJ_DIR)/physics.o
+	$(CC) $(BUILD_LINE) $(INCLUDE_DIR) -c $(SOURCE_DIR)physics.c -o $(OBJ_DIR)physics.o
 
-all: main.c physics.o
-	$(CC) $(WARNINGS) $(OBJ_DIR)*.o $(SOURCE_DIR)/main.c $(OPTIONS_FLAGS) $(INCLUDE_DIR) -o $(OUTPUT_FILE) $(CC_LIB) $(LIB_FLAGS)
+main.o: $(SOURCE_DIR)/main.c
+	$(CC) $(BUILD_LINE) $(INCLUDE_DIR) -c $(SOURCE_DIR)main.c -o $(OBJ_DIR)main.o
+
+all: physics.o main.o
+	$(CC) $(OBJ_DIR)main.o $(OBJ_DIR)physics.o -o $(OUTPUT_FILE) $(LIB_FLAGS)

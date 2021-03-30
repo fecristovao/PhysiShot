@@ -104,7 +104,7 @@ static void liberarVetor( Vetor *ptrVetor )
 err_t criarSistemaEQ( SistemaEQ *ptrSistemaEQ )
 {
     TRACE_ENTER();
-    err_t ret = SUCCESS;
+    int ret = SUCCESS;
 
     if(ptrSistemaEQ)
     {
