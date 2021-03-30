@@ -27,7 +27,7 @@ CC_LIB = -L$(PIG)/libLinux/$(OS_BITS)
 LIB_DEST_DIR = /usr/local/lib/
 
 #Saída do jogo principal
-OUTPUT_FILE = Physishot
+OUTPUT_FILE = Release/Physishot
 
 #Opções de Build
 BUILD_LINE = -W -std=c++11 -fpermissive

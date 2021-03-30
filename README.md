@@ -16,8 +16,7 @@ exibição ao longo do tempo dos vetores do movimento, além da ação do vento.
 
 ## Enredo do jogo
 
-Sendo um jogo educacional, um enredo ainda não foi definido, porém durante o
-desenvolvimento uma história será criada.
+<span style="color:red">O PhysiShot se ambientará nas olimpiads de Tokyo (2021), inicialmente no esporte de [lançamento de dardo](https://pt.wikipedia.org/wiki/Lan%C3%A7amento_de_dardo), onde sua primeira aparição nas olimpiadas modernas foram nas olimpiadas de Londres em 1908.</span>
 
 ## Cronograma de desenvolvimento
 
